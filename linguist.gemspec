@@ -1,7 +1,9 @@
 Gem::Specification.new do |s|
-  s.name    = 'linguist'
-  s.version = '1.0.0'
-  s.summary = "GitHub Language detection"
+  s.name     = 'linguist'
+  s.version  = '1.0.0'
+  s.summary  = 'GitHub Language detection'
+  s.authors  = `git log --format='%aN' | sort -u`
+  s.homepage = 'https://github.com/github/linuist'
 
   s.files = Dir['lib/**/*']
   s.executables << 'linguist'
